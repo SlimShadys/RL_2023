@@ -26,3 +26,15 @@ was used in previous years. A good overview of the differences can be
 found [here](https://gymnasium.farama.org/content/migration-guide/).
 
 
+#### Syncing the fork
+In order to sync the fork and merge the new changes, add the remote by:
+```bash
+git remote add upstream https://github.com/KRLGroup/RL_2023.git
+```
+then, simply use:
+```bash
+git fetch upstream
+git checkout main
+git merge upstream/main
+git push
+```
